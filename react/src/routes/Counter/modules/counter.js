@@ -7,7 +7,7 @@ export const COUNTER_DOUBLE_ASYNC = 'COUNTER_DOUBLE_ASYNC'
 // ------------------------------------
 // Actions
 // ------------------------------------
-export function increment (value = 1) {
+export function increment (value = "ATL") {
   return {
     type    : COUNTER_INCREMENT,
     payload : value
@@ -41,7 +41,7 @@ export const actions = {
 // Action Handlers
 // ------------------------------------
 const ACTION_HANDLERS = {
-  [COUNTER_INCREMENT]    : (state, action) => state + action.payload,
+  [COUNTER_INCREMENT]    : (state, action) => localhost:3000/search/action.payload
   [COUNTER_DOUBLE_ASYNC] : (state, action) => state * 2
 }
 

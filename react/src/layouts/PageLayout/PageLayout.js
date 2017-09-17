@@ -3,7 +3,6 @@ import { IndexLink, Link } from 'react-router'
 import PropTypes from 'prop-types'
 import './PageLayout.scss'
 
-
 export const PageLayout = ({ children }) => (
   <div className='container text-center'>
     <h1>Slash and Dash</h1>
@@ -13,7 +12,7 @@ export const PageLayout = ({ children }) => (
     {/*</div>*/}
     <search>
         <input type="text" name="search"/>
-        <button>Search</button>
+        <button onclick="increment">Search</button>
     </search>
   </div>
 )
