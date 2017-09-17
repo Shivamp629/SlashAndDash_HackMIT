@@ -13,7 +13,8 @@ export const PageLayout = ({ children }) => (
       {/*{children}*/}
     {/*</div>*/}
     <search>
-        <input type="text" name="search"/>
+        <input type="text" name="depart" placeholder="Depart From"/>
+        <input type="text" name="passenger" placeholder="Number of Passengers"/>
         <button onClick={increment}>Search</button>
     </search>
 
