@@ -13,10 +13,12 @@
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix"
   },
+  "proxy": "http://localhost:4000",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/davezuko/react-redux-starter-kit.git"
   },
+
   "author": "David Zukowski <david@zuko.me> (http://zuko.me)",
   "license": "MIT",
   "dependencies": {

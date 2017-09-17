@@ -12,6 +12,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/search/:term', function(req, res, next) {
+    console.log("before flying");
 
     res.json(
         {

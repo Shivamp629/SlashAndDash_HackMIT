@@ -41,8 +41,7 @@ export const actions = {
 // Action Handlers
 // ------------------------------------
 const ACTION_HANDLERS = {
-  [COUNTER_INCREMENT]    : (state, action) => localhost:3000/search/action.payload
-  [COUNTER_DOUBLE_ASYNC] : (state, action) => state * 2
+  [COUNTER_INCREMENT]    : (state, action) => fetch('/search/action.payload')
 }
 
 // ------------------------------------

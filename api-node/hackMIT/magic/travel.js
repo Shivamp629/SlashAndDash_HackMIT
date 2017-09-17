@@ -1,10 +1,9 @@
-var j = require('data.json');
-var spawn = require("child_process").spawn;
+var PythonShell = require('python-shell');
+
 
 module.exports.flying = function (name) {
-    var process = spawn('python', ['../Amadeus.py', arg1])
-    process.stdout.on('data', function(data) {
-        return data;
+    PythonShell.run('Amadeus.py', options, function (err, results) {
+        console.log(results);
     });
-    
+
 }
