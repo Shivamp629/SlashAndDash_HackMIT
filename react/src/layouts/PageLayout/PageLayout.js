@@ -13,7 +13,7 @@ export const PageLayout = ({ children }) => (
     {/*</div>*/}
     <search>
         <input type="text" name="search"/>
-        <button onClick={fetch()}>Search</button>
+        <button>Search</button>
     </search>
   </div>
 )
