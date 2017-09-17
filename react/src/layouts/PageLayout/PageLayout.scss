@@ -25,11 +25,12 @@ div {
 }
 
 button {
-  background-color: #ECE1CF;
+  background-color: #c69f9f;
   color: white;
-  transform: translateY(665%);
+  text-shadow: 3px;
+  transform: translateY(640%);
   size: 350px;
-  font-size: 120%;
+  font-size: 130%;
   margin-left: 1%;
   border-radius: 4px;
   font-family: 'Poppins', sans-serif;
@@ -38,7 +39,7 @@ button {
 input[type=text] {
   width: 40%;
   box-sizing: border-box;
-  border: 2px solid #ccc;
+  border: 2px solid #c69f9f;
   border-radius: 4px;
   transform: translateY(550%);
   font-size: 16px;
@@ -47,6 +48,30 @@ input[type=text] {
   background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
+}
+
+table {
+    display: none;
+    border-collapse: collapse;
+    transform: translateY(120%);
+    width: 100%;
+    margin-left: 37.5%;
+    color:  #c69f9f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 110%;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(odd){background-color: #ECE1CF}
+
+th {
+    background-color: #c69f9f;
+    color: white;
 }
 
 search {

@@ -14,8 +14,41 @@ export const PageLayout = ({ children }) => (
     {/*</div>*/}
     <search>
         <input type="text" name="search"/>
-        <button onClick={increment}>Search</button>
+        <button onClick={increment, show}>Search</button>
     </search>
+
+      <table id="resultsTable">
+        <tr>
+          <th>Departure</th>
+          <th>Passengers</th>
+          <th>Estimated Cost</th>
+        </tr>
+        <tr>
+          <td>ATL</td>
+          <td>230</td>
+          <td>$110</td>
+        </tr>
+        <tr>
+          <td>BOS</td>
+          <td>1000</td>
+          <td>$190</td>
+        </tr>
+        <tr>
+          <td>HOU</td>
+          <td>570</td>
+          <td>$89</td>
+        </tr>
+        <tr>
+          <td>MIA</td>
+          <td>489</td>
+          <td>$250</td>
+        </tr>
+        <tr>
+          <td>CHI</td>
+          <td>720</td>
+          <td>$205</td>
+        </tr>
+      </table>
   </div>
 )
 PageLayout.propTypes = {
@@ -24,6 +57,10 @@ PageLayout.propTypes = {
 }
 export function increment (value = "ATL") {
   fetch('http://localhost:4000/search/action.payload')
+}
+
+export function show () {
+  document.getElementById('resultsTable').style.display = "block"
 }
 
 // const ACTION_HANDLERS = {
