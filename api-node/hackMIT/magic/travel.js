@@ -1,14 +1,16 @@
 
 
-module.exports.flying = function (name, passengers) {
+module.exports.flying = function (name) {
     console.log("Hello");
     var spawn = require("child_process").spawn;
-    var process = spawn('python',["path/to/script.py", arg1, arg2]);
-    console.log("Hello2");
-    process.stdout.on('data', function (data){
-        console.log("Hello3");
-        console.log(data);
-        console.log("Hello");
+    name = "ATL";
+    passengers = 50,000;
+    var dirname = __dirname;
+    var pyprocess = spawn('python3',[ __dirname + "/Amadeus.py", name, passengers, dirname]);
+//   pyprocess.stdout.pipe(process.stdout)
+//    pyprocess.stderr.pipe(process.stderr)
+
+    pyprocess.stdout.on('data', function (data){
+        console.log(data.toString());
     });
-    console.log("Hello4");
 }
